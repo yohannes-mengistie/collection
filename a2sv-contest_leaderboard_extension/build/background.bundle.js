@@ -1,0 +1,1 @@
+console.log("Background.js loaded"),chrome.runtime.onMessage.addListener((async(o,a,e)=>{if(console.log(o),"fetchData"===o.action){const a=o.url;console.log(a),console.log("uyrsf");const c=await fetch(a),n=await c.json();console.log(n),e({action:"dataFetched",data:n})}}));

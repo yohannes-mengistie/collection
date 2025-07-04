@@ -1,0 +1,1 @@
+!function(){const e=document.querySelector('a[href^="/profile/"]');if(e){const t=e.textContent.trim(),n=window.location.href.split("/"),o=n[n.length-1];chrome.runtime.sendMessage({type:"fromContent",data:{username:t,currContestID:o}})}}();
